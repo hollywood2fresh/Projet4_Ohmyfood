@@ -1,0 +1,13 @@
+/* mette nos blocs BEM qui contiennent ce qui est réutilisable, 
+par exemple un header pour les mises en page de grande taille ou un footer
+*/
+
+section:nth-child(1) {
+    @extend %ColumnCenter;
+}
+
+section:nth-child(2) {
+    div {
+        @extend %ColumnCenter;
+    }
+}
