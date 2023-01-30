@@ -2,7 +2,7 @@
 utilisé pour ranger les blocs BEM qui sont plus indépendants, comme les boutons
 */
 
-section:nth-child(1) {
+section:nth-child(2) {
     button {
         width: 218px;
         height: 50px;
@@ -10,10 +10,12 @@ section:nth-child(1) {
         border-radius: 25px;
         border: none;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        color: #FFFFFF;
+        margin-top: 27px;
     }
 }
 
-section:nth-child(2) {
+section:nth-child(3) {
     button {
         width: 322px;
         height: 72px;
@@ -21,10 +23,30 @@ section:nth-child(2) {
         border: none;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
         background-color: $section-color;
+        margin-bottom: 25px;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        position: relative;
+        span {
+            padding: 5px 8px 4px 8px;
+            background-color: $primary-color;
+            color: #FFFFFF;
+            border-radius: 50%;
+
+            position: absolute;
+            left: -12px;
+        }
+    }
+    button:last-child {
+        margin: 0px;
     }
     .fa-mobile-screen-button, .fa-list-ul, .fa-store {
         font-size: 16px;
         margin: 0px 20px 0px 35px;
+        color:  #7E7E7E;
     }
 }
 
@@ -41,6 +63,17 @@ figure {
         border-radius: 15px 15px 0px 0px;
         object-fit: cover;
     }
+    span {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background-color: $tertiary-color;
+        padding: 7px 9px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
+        color: #008766;
+        font-size: 14px;
+    }
     figcaption {
         padding: 10px 13px 0px 13px;
     }
@@ -50,8 +83,8 @@ figure {
     p {
         font-size: 17px;
     }
-    i {
-        font-size: 21px;
+    .fa-heart {
+        font-size: 23px;
         position: absolute;
         right: 25px;
         bottom: 33px;

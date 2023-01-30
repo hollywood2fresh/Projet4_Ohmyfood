@@ -2,10 +2,11 @@
 /*permet de rangez les variables, fonctions, mixins et les %placeholders pour les extensions*/
 /* :hover */
 /* background-color */
-section:nth-child(2) div, section:nth-child(1) {
+section:nth-child(3) div, section:nth-child(2), form, header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 /*
@@ -59,7 +60,6 @@ td, th {
 
 body {
   box-sizing: border-box;
-  padding: 0px 20px;
   font-family: "Roboto", sans-serif;
   min-width: 375px;
 }
@@ -81,26 +81,45 @@ p {
 /*
 utilisé pour ranger les blocs BEM qui sont plus indépendants, comme les boutons
 */
-section:nth-child(1) button {
+section:nth-child(2) button {
   width: 218px;
   height: 50px;
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
   border-radius: 25px;
   border: none;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  color: #FFFFFF;
+  margin-top: 27px;
 }
 
-section:nth-child(2) button {
+section:nth-child(3) button {
   width: 322px;
   height: 72px;
   border-radius: 20px;
   border: none;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   background-color: #F7F7F7;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
 }
-section:nth-child(2) .fa-mobile-screen-button, section:nth-child(2) .fa-list-ul, section:nth-child(2) .fa-store {
+section:nth-child(3) button span {
+  padding: 5px 8px 4px 8px;
+  background-color: #9356DC;
+  color: #FFFFFF;
+  border-radius: 50%;
+  position: absolute;
+  left: -12px;
+}
+section:nth-child(3) button:last-child {
+  margin: 0px;
+}
+section:nth-child(3) .fa-mobile-screen-button, section:nth-child(3) .fa-list-ul, section:nth-child(3) .fa-store {
   font-size: 16px;
   margin: 0px 20px 0px 35px;
+  color: #7E7E7E;
 }
 
 figure {
@@ -118,6 +137,17 @@ figure img {
   -o-object-fit: cover;
      object-fit: cover;
 }
+figure span {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #99E2D0;
+  padding: 7px 9px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  color: #008766;
+  font-size: 14px;
+}
 figure figcaption {
   padding: 10px 13px 0px 13px;
 }
@@ -127,8 +157,8 @@ figure h3 {
 figure p {
   font-size: 17px;
 }
-figure i {
-  font-size: 21px;
+figure .fa-heart {
+  font-size: 23px;
   position: absolute;
   right: 25px;
   bottom: 33px;
@@ -137,5 +167,75 @@ figure i {
 /* mette nos blocs BEM qui contiennent ce qui est réutilisable, 
 par exemple un header pour les mises en page de grande taille ou un footer
 */
+header {
+  height: 63px;
+}
+header img {
+  width: 162px;
+}
+
+form {
+  flex-direction: row;
+  height: 50px;
+  background-color: #EAEAEA;
+}
+form i {
+  margin-right: 17px;
+}
+form input {
+  background-color: #EAEAEA;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+form i, form input {
+  position: relative;
+  left: 20px;
+}
+
+section:nth-child(2) {
+  text-align: center;
+  background-color: #F7F7F7;
+  padding: 39px 0px 57px 0px;
+}
+section:nth-child(2) h1 {
+  margin: 0px 42px 15px 42px;
+}
+section:nth-child(2) p {
+  margin: 0px 21px;
+}
+
+section:nth-child(3) {
+  padding: 48px 20px;
+}
+section:nth-child(3) div {
+  margin-top: 26px;
+}
+
+section:nth-child(4) {
+  padding: 54px 20px;
+  background-color: #F7F7F7;
+}
+
+footer {
+  background-color: #353535;
+  color: #FFF;
+  padding: 22px 20px 33px 20px;
+}
+footer img {
+  filter: invert(100%) sepia(8%) saturate(2%) hue-rotate(112deg) brightness(123%) contrast(100%);
+  width: 100px;
+  margin-bottom: 16px;
+}
+footer li {
+  margin: 0.5em;
+}
+footer .fa-utensils {
+  margin-right: 15px;
+}
+footer .fa-handshake-angle {
+  margin-right: 9px;
+}
+
 /*contient les blocs de code qui ne s’appliquent qu’à une seule page. 
 pages/ contient des règles spécifiques à une seule page qui ne seront pas réutilisées ailleurs*//*# sourceMappingURL=style.css.map */
