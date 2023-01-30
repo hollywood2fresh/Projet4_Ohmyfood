@@ -2,11 +2,24 @@
 /*permet de rangez les variables, fonctions, mixins et les %placeholders pour les extensions*/
 /* :hover */
 /* background-color */
-section:nth-child(3) div, section:nth-child(2), form, header {
+.homepage-fonctionnement div, .homepage-reservez, form, header {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.menu-desserts, .menu-plats, .menu-entrees {
+  background-color: #F7F7F7;
+  padding: 40px 0px;
+}
+.menu-desserts h2, .menu-plats h2, .menu-entrees h2 {
+  font-weight: 300;
+  font-size: 16px;
+  margin-left: 13px;
+  border-bottom: 3px solid #99E2D0;
+  width: 7%;
+  padding-bottom: 5px;
 }
 
 /*
@@ -81,7 +94,7 @@ p {
 /*
 utilisé pour ranger les blocs BEM qui sont plus indépendants, comme les boutons
 */
-section:nth-child(2) button {
+.btn-commande {
   width: 218px;
   height: 50px;
   background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
@@ -89,10 +102,9 @@ section:nth-child(2) button {
   border: none;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   color: #FFFFFF;
-  margin-top: 27px;
 }
 
-section:nth-child(3) button {
+.homepage-fonctionnement button {
   width: 322px;
   height: 72px;
   border-radius: 20px;
@@ -105,7 +117,7 @@ section:nth-child(3) button {
   align-items: center;
   position: relative;
 }
-section:nth-child(3) button span {
+.homepage-fonctionnement button span {
   padding: 5px 8px 4px 8px;
   background-color: #9356DC;
   color: #FFFFFF;
@@ -113,10 +125,10 @@ section:nth-child(3) button span {
   position: absolute;
   left: -12px;
 }
-section:nth-child(3) button:last-child {
+.homepage-fonctionnement button:last-child {
   margin: 0px;
 }
-section:nth-child(3) .fa-mobile-screen-button, section:nth-child(3) .fa-list-ul, section:nth-child(3) .fa-store {
+.homepage-fonctionnement .fa-mobile-screen-button, .homepage-fonctionnement .fa-list-ul, .homepage-fonctionnement .fa-store {
   font-size: 16px;
   margin: 0px 20px 0px 35px;
   color: #7E7E7E;
@@ -164,6 +176,26 @@ figure .fa-heart {
   bottom: 33px;
 }
 
+article {
+  height: 68px;
+  padding: 12px 5px;
+  margin: 13px;
+  background-color: #FFF;
+  border-radius: 15px;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+article h3 {
+  margin-bottom: 0.2em;
+}
+article span {
+  position: absolute;
+  right: 17px;
+  bottom: 17px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
 /* mette nos blocs BEM qui contiennent ce qui est réutilisable, 
 par exemple un header pour les mises en page de grande taille ou un footer
 */
@@ -172,49 +204,6 @@ header {
 }
 header img {
   width: 162px;
-}
-
-form {
-  flex-direction: row;
-  height: 50px;
-  background-color: #EAEAEA;
-}
-form i {
-  margin-right: 17px;
-}
-form input {
-  background-color: #EAEAEA;
-  border: none;
-  outline: none;
-  font-size: 16px;
-}
-form i, form input {
-  position: relative;
-  left: 20px;
-}
-
-section:nth-child(2) {
-  text-align: center;
-  background-color: #F7F7F7;
-  padding: 39px 0px 57px 0px;
-}
-section:nth-child(2) h1 {
-  margin: 0px 42px 15px 42px;
-}
-section:nth-child(2) p {
-  margin: 0px 21px;
-}
-
-section:nth-child(3) {
-  padding: 48px 20px;
-}
-section:nth-child(3) div {
-  margin-top: 26px;
-}
-
-section:nth-child(4) {
-  padding: 54px 20px;
-  background-color: #F7F7F7;
 }
 
 footer {
@@ -238,4 +227,103 @@ footer .fa-handshake-angle {
 }
 
 /*contient les blocs de code qui ne s’appliquent qu’à une seule page. 
-pages/ contient des règles spécifiques à une seule page qui ne seront pas réutilisées ailleurs*//*# sourceMappingURL=style.css.map */
+pages/ contient des règles spécifiques à une seule page qui ne seront pas réutilisées ailleurs*/
+form {
+  flex-direction: row;
+  height: 50px;
+  background-color: #EAEAEA;
+}
+form i {
+  margin-right: 17px;
+}
+form input {
+  background-color: #EAEAEA;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+form i, form input {
+  position: relative;
+  left: 20px;
+}
+
+.homepage-reservez .btn-commande {
+  margin-top: 27px;
+}
+
+.homepage-reservez {
+  text-align: center;
+  background-color: #F7F7F7;
+  padding: 39px 0px 57px 0px;
+}
+.homepage-reservez h1 {
+  margin: 0px 42px 15px 42px;
+}
+.homepage-reservez p {
+  margin: 0px 21px;
+}
+
+.homepage-fonctionnement {
+  padding: 48px 20px;
+}
+.homepage-fonctionnement div {
+  margin-top: 26px;
+}
+
+.homepage-restaurants {
+  padding: 54px 20px;
+  background-color: #F7F7F7;
+}
+
+header i {
+  position: absolute;
+  top: 26px;
+  left: 23px;
+  font-size: 17px;
+  color: #353535;
+}
+
+.menu-titre {
+  position: relative;
+}
+.menu-titre img {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.menu-titre div {
+  background-color: #F7F7F7;
+  width: 100%;
+  height: 70px;
+  border-radius: 40px 40px 0px 0px;
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+}
+.menu-titre h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 28px;
+  margin-left: 17px;
+}
+.menu-titre i {
+  position: absolute;
+  right: 41px;
+  bottom: 10px;
+}
+
+.menu-plats {
+  padding-top: 0px;
+}
+
+.menu-desserts {
+  padding-top: 0px;
+}
+
+.div-btn {
+  background-color: #F7F7F7;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */

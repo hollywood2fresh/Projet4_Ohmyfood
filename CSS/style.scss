@@ -1,6 +1,8 @@
 @import 'utils/variable';
+@import 'utils/mixins';
 @import 'utils/placeholders';
 @import 'base/base';
 @import 'components/components';
 @import 'layouts/layouts';
-@import 'pages/pages';
+@import 'pages/page-index.scss';
+@import 'pages/page-menu'

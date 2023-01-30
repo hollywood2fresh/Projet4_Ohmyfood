@@ -9,53 +9,6 @@ header {
     }
 }
 
-form {
-    @extend %ColumnCenter;
-    flex-direction: row;
-    height: 50px;
-    background-color: #EAEAEA;
-
-    i {
-        margin-right: 17px;
-    }
-    input {
-    background-color: #EAEAEA;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    }
-    i, input {
-        position: relative;
-        left: 20px;
-    }
-}
-
-section:nth-child(2) {
-    @extend %ColumnCenter;
-    text-align: center;
-    background-color: $section-color;
-    padding: 39px 0px 57px 0px;
-    h1{
-        margin: 0px 42px 15px 42px;
-    }
-    p {
-        margin: 0px 21px;
-    }
-}
-
-section:nth-child(3) {
-    padding: 48px 20px;
-    div {
-        @extend %ColumnCenter;
-        margin-top: 26px;
-    }
-}
-
-section:nth-child(4) {
-    padding: 54px 20px;
-    background-color: $section-color;
-}
-
 footer {
     background-color: #353535;
     color: #FFF;

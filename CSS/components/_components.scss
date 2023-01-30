@@ -2,20 +2,19 @@
 utilisé pour ranger les blocs BEM qui sont plus indépendants, comme les boutons
 */
 
-section:nth-child(2) {
-    button {
-        width: 218px;
-        height: 50px;
-        background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-        border-radius: 25px;
-        border: none;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-        color: #FFFFFF;
-        margin-top: 27px;
-    }
+
+ .btn-commande {
+    width: 218px;
+    height: 50px;
+    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
 }
 
-section:nth-child(3) {
+
+.homepage-fonctionnement {
     button {
         width: 322px;
         height: 72px;
@@ -91,3 +90,22 @@ figure {
     }
 }
 
+article {
+    height: 68px;
+    padding: 12px 5px;
+    margin: 13px;
+    background-color: #FFF;
+    border-radius: 15px;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    position: relative;
+    h3 {
+        margin-bottom: 0.2em;
+    }
+    span {
+        position: absolute;
+        right: 17px;
+        bottom: 17px;
+        font-weight: 700;
+        font-size: 15px;
+    }
+}

@@ -4,3 +4,16 @@
     align-items: center;
     justify-content: center;
 }
+
+%article {
+    background-color: $section-color;
+    padding: 40px 0px;
+    h2 {
+        font-weight: 300;
+        font-size: 16px;
+        margin-left: 13px;
+        border-bottom: 3px solid $tertiary-color;
+        width: 7%;
+        padding-bottom: 5px;
+    }
+}
