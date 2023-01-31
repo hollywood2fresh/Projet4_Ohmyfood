@@ -1,52 +1,11 @@
-/*
-utilisé pour ranger les blocs BEM qui sont plus indépendants, comme les boutons
-*/
-
-
- .btn-commande {
+.btn-commande {
     width: 218px;
     height: 50px;
-    background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    background: linear-gradient(200.64deg, $primary-color -5.2%, $secondary-color 110.74%);
     border-radius: 25px;
     border: none;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     color: #FFFFFF;
-}
-
-
-.homepage-fonctionnement {
-    button {
-        width: 322px;
-        height: 72px;
-        border-radius: 20px;
-        border: none;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-        background-color: $section-color;
-        margin-bottom: 25px;
-
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-
-        position: relative;
-        span {
-            padding: 5px 8px 4px 8px;
-            background-color: $primary-color;
-            color: #FFFFFF;
-            border-radius: 50%;
-
-            position: absolute;
-            left: -12px;
-        }
-    }
-    button:last-child {
-        margin: 0px;
-    }
-    .fa-mobile-screen-button, .fa-list-ul, .fa-store {
-        font-size: 16px;
-        margin: 0px 20px 0px 35px;
-        color:  #7E7E7E;
-    }
 }
 
 figure {
@@ -116,4 +75,118 @@ article {
             drop-shadow(0px 1px 0 #000)
             drop-shadow(-1px 0px 0 #000)
             drop-shadow(0px -1px 0 #000);
+    transform: scale(1);
+    transition: all 0.2s ease-in;
+    &:hover {
+        background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: none;
+        transform: scale(1.25);
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
