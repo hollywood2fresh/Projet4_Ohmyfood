@@ -109,3 +109,11 @@ article {
         font-size: 15px;
     }
 }
+
+.fa-heart {
+    color: $section-color;
+    filter: drop-shadow(1px 0px 0 #000)
+            drop-shadow(0px 1px 0 #000)
+            drop-shadow(-1px 0px 0 #000)
+            drop-shadow(0px -1px 0 #000);
+}

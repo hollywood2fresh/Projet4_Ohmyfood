@@ -196,6 +196,11 @@ article span {
   font-size: 15px;
 }
 
+.fa-heart {
+  color: #F7F7F7;
+  filter: drop-shadow(1px 0px 0 #000) drop-shadow(0px 1px 0 #000) drop-shadow(-1px 0px 0 #000) drop-shadow(0px -1px 0 #000);
+}
+
 /* mette nos blocs BEM qui contiennent ce qui est réutilisable, 
 par exemple un header pour les mises en page de grande taille ou un footer
 */
