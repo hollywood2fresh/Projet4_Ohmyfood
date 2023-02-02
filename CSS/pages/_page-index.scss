@@ -65,6 +65,9 @@ form {
         align-items: center;
 
         position: relative;
+        &:hover {
+            background-color: #F5EDFF;
+        }
         span {
             padding: 5px 8px 4px 8px;
             background-color: $primary-color;

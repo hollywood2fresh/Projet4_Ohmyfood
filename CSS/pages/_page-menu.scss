@@ -39,16 +39,28 @@ header {
 
 .menu-entrees {
     @extend %article;
+    article > h3, article > p, article > span {
+        opacity: 0;
+        animation: slideDown 2s linear 0.5s 1 normal forwards;
+    }
 }
 
 .menu-plats {
     @extend %article;
     padding-top: 0px;
+    article > h3, article > p, article > span {
+        opacity: 0;
+        animation: slideDown 2s linear 1.5s 1 normal forwards;
+    }
 }
 
 .menu-desserts {
     @extend %article;
     padding-top: 0px;
+    article > h3, article > p, article > span {
+        opacity: 0;
+        animation: slideDown 2s linear 2.5s 1 normal forwards;
+    }
 }
 
 .div-btn {

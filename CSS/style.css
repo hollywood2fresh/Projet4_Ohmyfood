@@ -22,6 +22,23 @@
   padding-bottom: 5px;
 }
 
+@-webkit-keyframes slideDown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*
 contient les fichiers qui définissent les fondations de votre site, 
 par exemple la police de caractères et les normes que l’on veux appliquer 
@@ -274,6 +291,9 @@ form i, form input {
   align-items: center;
   position: relative;
 }
+.homepage-fonctionnement button:hover {
+  background-color: #F5EDFF;
+}
 .homepage-fonctionnement button span {
   padding: 5px 8px 4px 8px;
   background-color: #9356DC;
@@ -334,12 +354,28 @@ header i {
   bottom: 10px;
 }
 
+.menu-entrees article > h3, .menu-entrees article > p, .menu-entrees article > span {
+  opacity: 0;
+  -webkit-animation: slideDown 2s linear 0.5s 1 normal forwards;
+          animation: slideDown 2s linear 0.5s 1 normal forwards;
+}
+
 .menu-plats {
   padding-top: 0px;
+}
+.menu-plats article > h3, .menu-plats article > p, .menu-plats article > span {
+  opacity: 0;
+  -webkit-animation: slideDown 2s linear 1.5s 1 normal forwards;
+          animation: slideDown 2s linear 1.5s 1 normal forwards;
 }
 
 .menu-desserts {
   padding-top: 0px;
+}
+.menu-desserts article > h3, .menu-desserts article > p, .menu-desserts article > span {
+  opacity: 0;
+  -webkit-animation: slideDown 2s linear 2.5s 1 normal forwards;
+          animation: slideDown 2s linear 2.5s 1 normal forwards;
 }
 
 .div-btn {
