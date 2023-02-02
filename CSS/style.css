@@ -233,6 +233,9 @@ footer .fa-utensils {
 footer .fa-handshake-angle {
   margin-right: 9px;
 }
+footer a {
+  color: #FFF;
+}
 
 /*contient les blocs de code qui ne s’appliquent qu’à une seule page. 
 pages/ contient des règles spécifiques à une seule page qui ne seront pas réutilisées ailleurs*/
