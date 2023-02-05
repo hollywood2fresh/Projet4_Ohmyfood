@@ -343,7 +343,7 @@ form i, form input {
   border: none;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   background-color: #F7F7F7;
-  margin-bottom: 25px;
+  margin: 0px 15px 25px 15px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -360,9 +360,6 @@ form i, form input {
   position: absolute;
   left: -12px;
 }
-.homepage-fonctionnement button:last-child {
-  margin: 0px;
-}
 .homepage-fonctionnement .fa-mobile-screen-button, .homepage-fonctionnement .fa-list-ul, .homepage-fonctionnement .fa-store {
   font-size: 16px;
   margin: 0px 20px 0px 35px;
@@ -374,6 +371,59 @@ form i, form input {
   background-color: #F7F7F7;
 }
 
+@media screen and (min-width: 784px) {
+  .homepage-fonctionnement {
+    padding-left: 5%;
+  }
+  .homepage-fonctionnement div {
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .homepage-restaurants {
+    padding-left: 5%;
+  }
+  .homepage-restaurants div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .homepage-restaurants a {
+    flex-basis: 48%;
+  }
+}
+@media screen and (min-width: 1133px) {
+  .homepage-fonctionnement {
+    padding-left: 15%;
+  }
+  .homepage-restaurants {
+    padding-left: 15%;
+    overflow: hidden;
+  }
+  .homepage-restaurants div {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 3000px;
+  }
+  .homepage-restaurants a {
+    flex-basis: 340px;
+    margin-right: 25px;
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  footer img {
+    margin: 0px 71px;
+  }
+  footer ul {
+    display: flex;
+  }
+  footer li {
+    margin-left: 40px;
+  }
+}
 header i {
   position: absolute;
   top: 26px;

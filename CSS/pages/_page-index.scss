@@ -58,7 +58,7 @@ form {
         border: none;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
         background-color: $section-color;
-        margin-bottom: 25px;
+        margin: 0px 15px 25px 15px;
 
         display: flex;
         justify-content: flex-start;
@@ -78,9 +78,6 @@ form {
             left: -12px;
         }
     }
-    button:last-child {
-        margin: 0px;
-    }
     .fa-mobile-screen-button, .fa-list-ul, .fa-store {
         font-size: 16px;
         margin: 0px 20px 0px 35px;
@@ -91,4 +88,59 @@ form {
 .homepage-restaurants {
     padding: 54px 20px;
     background-color: $section-color;
+}
+
+@media screen and (min-width: 784px) {
+    .homepage-fonctionnement {
+        padding-left: 5%;
+        div {
+            justify-content: flex-start;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+    .homepage-restaurants {
+        padding-left: 5%;
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        a {
+            flex-basis: 48%;
+        }
+    }
+}
+
+@media screen and (min-width: 1133px) {
+    .homepage-fonctionnement {
+        padding-left: 15%;
+    }
+    .homepage-restaurants {
+        padding-left: 15%;
+        overflow: hidden;
+        div {
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            width: 3000px;
+        }
+        a {
+            flex-basis: 340px;
+            margin-right: 25px;
+        }
+    }
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        img {
+            margin: 0px 71px;
+        }
+        ul {
+            display: flex;
+        }
+        li {
+            margin-left: 40px;
+        }
+    }
 }
