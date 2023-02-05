@@ -22,18 +22,16 @@ header {
         border-radius: 40px 40px 0px 0px;
         display: flex;
         align-items: flex-end;
+        justify-content: center;
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
     }
     h1 {
         font-family: 'Shrikhand', cursive;
         font-size: 28px;
-        margin-left: 17px;
     }
     i {
-        position: absolute;
-        right: 41px;
-        bottom: 10px;
+        margin-left: 24px;
     }
 }
 
@@ -69,3 +67,54 @@ header {
     display: flex;
     justify-content: center;
 }
+
+@media screen and (min-width: 634px) {
+    .menu-entrees, .menu-plats, .menu-desserts, .div-btn, .menu-titre > div {
+        max-width: 1055px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        div {
+            display: flex;
+            flex-direction: column;
+            width: 634px;
+        }
+        h2 {
+            margin: 0px 0px 6px 0px;
+        }
+    }
+    article {
+        width: 634px;
+        margin: 6px auto;
+    }  
+    .menu-titre {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/*
+@media screen and (min-width: 634px) {
+    .main-menu:not(.menu-titre) {
+        display: flex;
+        flex-direction: column;
+        max-width: 1055px;
+        margin: auto;
+        .menu-entrees, .menu-plats, .menu-desserts {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2 {
+                position: relative;
+                left: -295px;
+                margin-bottom: 6px;
+                width: 50px;
+            }
+        }
+    }
+    article {
+        width: 634px;
+        margin: 6px 5px;
+    }   
+}*/

@@ -5,13 +5,12 @@ form {
     @extend %ColumnCenter;
     flex-direction: row;
     height: 50px;
-    background-color: #EAEAEA;
-    
+    background-color: $locate-color;
     i {
         margin-right: 17px;
     }
     input {
-    background-color: #EAEAEA;
+    background-color: $locate-color;
     border: none;
     outline: none;
     font-size: 16px;
@@ -20,13 +19,6 @@ form {
         position: relative;
         left: 20px;
     }
-}
-
-.homepage-reservez {
-    .btn-commande {
-        margin-top: 27px;
-    }
-    
 }
 
 .homepage-reservez {
@@ -39,6 +31,9 @@ form {
     }
     p {
         margin: 0px 21px;
+    }
+    .btn-commande {
+        margin-top: 27px;
     }
 }
 
@@ -71,7 +66,7 @@ form {
         span {
             padding: 5px 8px 4px 8px;
             background-color: $primary-color;
-            color: #FFFFFF;
+            color: #FFF;
             border-radius: 50%;
 
             position: absolute;
@@ -81,7 +76,7 @@ form {
     .fa-mobile-screen-button, .fa-list-ul, .fa-store {
         font-size: 16px;
         margin: 0px 20px 0px 35px;
-        color:  #7E7E7E;
+        color: $icons-color;
     }
 }
 
