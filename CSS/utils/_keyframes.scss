@@ -6,3 +6,12 @@
         opacity: 1;
     }
 }
+
+@keyframes checked {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 68px;
+    }
+}
