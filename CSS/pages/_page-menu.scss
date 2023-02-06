@@ -37,7 +37,7 @@ header {
 
 .menu-entrees {
     @extend %article;
-    article > h3, article > p, article > span {
+    article > .plat, article > .prix {
         opacity: 0;
         animation: slideDown 2s linear 0.5s 1 normal forwards;
     }
@@ -46,7 +46,7 @@ header {
 .menu-plats {
     @extend %article;
     padding-top: 0px;
-    article > h3, article > p, article > span {
+    article > .plat, article > .prix {
         opacity: 0;
         animation: slideDown 2s linear 1.5s 1 normal forwards;
     }
@@ -55,7 +55,7 @@ header {
 .menu-desserts {
     @extend %article;
     padding-top: 0px;
-    article > h3, article > p, article > span {
+    article > .plat, article > .prix {
         opacity: 0;
         animation: slideDown 2s linear 2.5s 1 normal forwards;
     }
@@ -74,7 +74,7 @@ header {
         margin: auto;
         display: flex;
         justify-content: center;
-        div {
+        .menu-plat-article {
             display: flex;
             flex-direction: column;
             width: 634px;
