@@ -53,6 +53,58 @@
     width: 68px;
   }
 }
+@-webkit-keyframes disappear {
+  0% {
+    opacity: 1;
+    z-index: 2;
+  }
+  99% {
+    opacity: 1;
+    z-index: 2;
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+@keyframes disappear {
+  0% {
+    opacity: 1;
+    z-index: 2;
+  }
+  99% {
+    opacity: 1;
+    z-index: 2;
+  }
+  100% {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+@-webkit-keyframes jumb {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+    box-shadow: 0 15px 0 #9356DC;
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes jumb {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-30px);
+    box-shadow: 0 15px 0 #9356DC;
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -263,6 +315,61 @@ article:hover .menu-plat-article__prix {
 }
 article:hover i {
   right: 17px;
+}
+
+.loader {
+  height: 100vh;
+  background-color: #FFF;
+  position: fixed;
+  z-index: 2;
+  inset: 0;
+  font-family: "Shrikhand", cursive;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: disappear 2.3s forwards;
+          animation: disappear 2.3s forwards;
+}
+.loader span {
+  font-size: 0.7em;
+  display: table-cell;
+  padding: 0 5px;
+  line-height: 100px;
+  -webkit-animation: jumb 1.5s infinite;
+          animation: jumb 1.5s infinite;
+}
+.loader span:nth-child(1) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+.loader span:nth-child(2) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+.loader span:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.loader span:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.loader span:nth-child(5) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.loader span:nth-child(6) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.loader span:nth-child(7) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.loader span:nth-child(8) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
 }
 
 header {

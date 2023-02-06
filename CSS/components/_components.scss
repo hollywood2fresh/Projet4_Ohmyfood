@@ -148,7 +148,50 @@ article {
     }
 }
 
-
+.loader {
+    height: 100vh;
+    background-color: #FFF;
+    position: fixed;
+    z-index: 2 ;
+    inset: 0;
+    font-family: "Shrikhand", cursive;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: disappear 2.3s forwards;
+    span {
+        font-size:0.7em;
+        display:table-cell;
+        padding: 0 5px;
+        line-height: 100px;
+        animation:jumb 1.5s infinite;
+    }
+    span:nth-child(1) {
+        animation-delay:0s;
+    }
+    span:nth-child(2) {
+        animation-delay:.1s;	
+    }
+    span:nth-child(3) {
+        animation-delay:.2s;
+    }
+    span:nth-child(4) {
+        animation-delay:.3s;	
+    }
+    span:nth-child(5) {
+        animation-delay:.4s;
+    }
+    span:nth-child(6) {
+        animation-delay:.5s;	
+    }
+    span:nth-child(7) {
+        animation-delay:.6s;
+    }
+    span:nth-child(8) {
+        animation-delay:.7s;
+    }
+}
 
 
 
