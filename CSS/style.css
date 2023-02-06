@@ -470,7 +470,7 @@ header i {
   margin-left: 24px;
 }
 
-.menu-entrees article > .plat, .menu-entrees article > .prix {
+.menu-entrees article > .menu-plat-article__plat, .menu-entrees article > .menu-plat-article__prix {
   opacity: 0;
   -webkit-animation: slideDown 2s linear 0.5s 1 normal forwards;
           animation: slideDown 2s linear 0.5s 1 normal forwards;
@@ -479,7 +479,7 @@ header i {
 .menu-plats {
   padding-top: 0px;
 }
-.menu-plats article > .plat, .menu-plats article > .prix {
+.menu-plats article > .menu-plat-article__plat, .menu-plats article > .menu-plat-article__prix {
   opacity: 0;
   -webkit-animation: slideDown 2s linear 1.5s 1 normal forwards;
           animation: slideDown 2s linear 1.5s 1 normal forwards;
@@ -488,7 +488,7 @@ header i {
 .menu-desserts {
   padding-top: 0px;
 }
-.menu-desserts article > .plat, .menu-desserts article > .prix {
+.menu-desserts article > .menu-plat-article__plat, .menu-desserts article > .menu-plat-article__prix {
   opacity: 0;
   -webkit-animation: slideDown 2s linear 2.5s 1 normal forwards;
           animation: slideDown 2s linear 2.5s 1 normal forwards;
