@@ -81,7 +81,7 @@ form {
 }
 
 .homepage-restaurants {
-    padding: 54px 20px;
+    padding: 80px 20px 54px 20px;
     background-color: $section-color;
 }
 
@@ -114,17 +114,22 @@ form {
     }
     .homepage-restaurants {
         padding-left: 15%;
-        overflow: hidden;
+        overflow: scroll;
         div {
             flex-wrap: nowrap;
             justify-content: flex-start;
-            width: 3000px;
+            width: 1500px;
         }
         a {
             flex-basis: 340px;
             margin-right: 25px;
         }
+        h2 {
+            position: absolute;
+            top: 640px;
+        }
     }
+
     footer {
         display: flex;
         flex-direction: row-reverse;

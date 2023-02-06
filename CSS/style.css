@@ -367,7 +367,7 @@ form i, form input {
 }
 
 .homepage-restaurants {
-  padding: 54px 20px;
+  padding: 80px 20px 54px 20px;
   background-color: #F7F7F7;
 }
 
@@ -399,16 +399,20 @@ form i, form input {
   }
   .homepage-restaurants {
     padding-left: 15%;
-    overflow: hidden;
+    overflow: scroll;
   }
   .homepage-restaurants div {
     flex-wrap: nowrap;
     justify-content: flex-start;
-    width: 3000px;
+    width: 1500px;
   }
   .homepage-restaurants a {
     flex-basis: 340px;
     margin-right: 25px;
+  }
+  .homepage-restaurants h2 {
+    position: absolute;
+    top: 640px;
   }
   footer {
     display: flex;
