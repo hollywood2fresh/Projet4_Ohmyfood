@@ -1,6 +1,3 @@
-/* mette nos blocs BEM qui contiennent ce qui est réutilisable, 
-par exemple un header pour les mises en page de grande taille ou un footer
-*/
 header {
     @extend %ColumnCenter;
     width: 100%;

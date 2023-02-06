@@ -92,29 +92,3 @@ header {
         justify-content: center;
     }
 }
-
-/*
-@media screen and (min-width: 634px) {
-    .main-menu:not(.menu-titre) {
-        display: flex;
-        flex-direction: column;
-        max-width: 1055px;
-        margin: auto;
-        .menu-entrees, .menu-plats, .menu-desserts {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            h2 {
-                position: relative;
-                left: -295px;
-                margin-bottom: 6px;
-                width: 50px;
-            }
-        }
-    }
-    article {
-        width: 634px;
-        margin: 6px 5px;
-    }   
-}*/

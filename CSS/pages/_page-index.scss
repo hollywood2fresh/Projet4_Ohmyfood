@@ -1,6 +1,3 @@
-/*contient les blocs de code qui ne s’appliquent qu’à une seule page. 
-pages/ contient des règles spécifiques à une seule page qui ne seront pas réutilisées ailleurs*/
-
 form {
     @extend %ColumnCenter;
     flex-direction: row;
@@ -10,10 +7,10 @@ form {
         margin-right: 17px;
     }
     input {
-    background-color: $locate-color;
-    border: none;
-    outline: none;
-    font-size: 16px;
+        background-color: $locate-color;
+        border: none;
+        outline: none;
+        font-size: 16px;
     }
     i, input {
         position: relative;
@@ -105,6 +102,10 @@ form {
         a {
             flex-basis: 48%;
         }
+        h2 {
+            position: absolute;
+            top: 735px;
+        }
     }
 }
 
@@ -124,10 +125,6 @@ form {
             flex-basis: 340px;
             margin-right: 25px;
         }
-        h2 {
-            position: absolute;
-            top: 640px;
-        }
     }
 
     footer {
@@ -142,5 +139,11 @@ form {
         li {
             margin-left: 40px;
         }
+    }
+}
+
+@media screen and (min-width: 1266px) {
+    .homepage-restaurants h2 {
+        top: 640px;
     }
 }
