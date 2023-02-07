@@ -20,51 +20,12 @@
   padding-bottom: 5px;
 }
 
-@-webkit-keyframes slideDown {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 @keyframes slideDown {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
-  }
-}
-@-webkit-keyframes checked {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 68px;
-  }
-}
-@keyframes checked {
-  from {
-    width: 0px;
-  }
-  to {
-    width: 68px;
-  }
-}
-@-webkit-keyframes disappear {
-  0% {
-    opacity: 1;
-    z-index: 2;
-  }
-  99% {
-    opacity: 1;
-    z-index: 2;
-  }
-  100% {
-    opacity: 0;
-    z-index: -2;
   }
 }
 @keyframes disappear {
@@ -79,18 +40,6 @@
   100% {
     opacity: 0;
     z-index: -2;
-  }
-}
-@-webkit-keyframes jumb {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-30px);
-    box-shadow: 0 15px 0 #9356DC;
-  }
-  100% {
-    transform: translateY(0px);
   }
 }
 @keyframes jumb {
@@ -328,48 +277,38 @@ article:hover i {
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-animation: disappear 2.3s forwards;
-          animation: disappear 2.3s forwards;
+  animation: disappear 2.3s forwards;
 }
 .loader span {
   font-size: 0.7em;
   display: table-cell;
   padding: 0 5px;
   line-height: 100px;
-  -webkit-animation: jumb 1.5s infinite;
-          animation: jumb 1.5s infinite;
+  animation: jumb 1.5s infinite;
 }
 .loader span:nth-child(1) {
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
+  animation-delay: 0s;
 }
 .loader span:nth-child(2) {
-  -webkit-animation-delay: 0.1s;
-          animation-delay: 0.1s;
+  animation-delay: 0.1s;
 }
 .loader span:nth-child(3) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 .loader span:nth-child(4) {
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation-delay: 0.3s;
 }
 .loader span:nth-child(5) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
+  animation-delay: 0.4s;
 }
 .loader span:nth-child(6) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 .loader span:nth-child(7) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 .loader span:nth-child(8) {
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
+  animation-delay: 0.7s;
 }
 
 header {
@@ -579,8 +518,7 @@ header i {
 
 .menu-entrees article > .menu-plat-article__plat, .menu-entrees article > .menu-plat-article__prix {
   opacity: 0;
-  -webkit-animation: slideDown 2s linear 0.5s 1 normal forwards;
-          animation: slideDown 2s linear 0.5s 1 normal forwards;
+  animation: slideDown 2s linear 0.5s 1 normal forwards;
 }
 
 .menu-plats {
@@ -588,8 +526,7 @@ header i {
 }
 .menu-plats article > .menu-plat-article__plat, .menu-plats article > .menu-plat-article__prix {
   opacity: 0;
-  -webkit-animation: slideDown 2s linear 1.5s 1 normal forwards;
-          animation: slideDown 2s linear 1.5s 1 normal forwards;
+  animation: slideDown 2s linear 1.5s 1 normal forwards;
 }
 
 .menu-desserts {
@@ -597,8 +534,7 @@ header i {
 }
 .menu-desserts article > .menu-plat-article__plat, .menu-desserts article > .menu-plat-article__prix {
   opacity: 0;
-  -webkit-animation: slideDown 2s linear 2.5s 1 normal forwards;
-          animation: slideDown 2s linear 2.5s 1 normal forwards;
+  animation: slideDown 2s linear 2.5s 1 normal forwards;
 }
 
 .div-btn {
