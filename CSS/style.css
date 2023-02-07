@@ -228,6 +228,8 @@ article .menu-plat-article__plat p {
 }
 article .menu-plat-article__prix {
   width: 70px;
+  font-weight: 700;
+  font-size: 15px;
   transition: all 0.5s;
   padding-left: 17px;
 }
@@ -342,6 +344,21 @@ footer a {
   color: #FFF;
 }
 
+@media screen and (min-width: 1005px) {
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  footer img {
+    margin: 0px 71px;
+  }
+  footer ul {
+    display: flex;
+  }
+  footer li {
+    margin-left: 40px;
+  }
+}
 form {
   flex-direction: row;
   height: 50px;
@@ -436,7 +453,7 @@ form i, form input {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .homepage-restaurants a {
+  .homepage-restaurants figure {
     flex-basis: 48%;
   }
   .homepage-restaurants h2 {
@@ -457,22 +474,9 @@ form i, form input {
     justify-content: flex-start;
     width: 1500px;
   }
-  .homepage-restaurants a {
+  .homepage-restaurants figure {
     flex-basis: 340px;
     margin-right: 25px;
-  }
-  footer {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  footer img {
-    margin: 0px 71px;
-  }
-  footer ul {
-    display: flex;
-  }
-  footer li {
-    margin-left: 40px;
   }
 }
 @media screen and (min-width: 1266px) {

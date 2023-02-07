@@ -29,3 +29,19 @@ footer {
         color: #FFF;
     }
 }
+
+@media screen and (min-width: 1005px)  {
+    footer {
+        display: flex;
+        flex-direction: row-reverse;
+        img {
+            margin: 0px 71px;
+        }
+        ul {
+            display: flex;
+        }
+        li {
+            margin-left: 40px;
+        }
+    }
+}

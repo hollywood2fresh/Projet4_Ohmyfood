@@ -99,7 +99,7 @@ form {
             flex-wrap: wrap;
             justify-content: space-between;
         }
-        a {
+        figure {
             flex-basis: 48%;
         }
         h2 {
@@ -121,23 +121,9 @@ form {
             justify-content: flex-start;
             width: 1500px;
         }
-        a {
+        figure {
             flex-basis: 340px;
             margin-right: 25px;
-        }
-    }
-
-    footer {
-        display: flex;
-        flex-direction: row-reverse;
-        img {
-            margin: 0px 71px;
-        }
-        ul {
-            display: flex;
-        }
-        li {
-            margin-left: 40px;
         }
     }
 }
