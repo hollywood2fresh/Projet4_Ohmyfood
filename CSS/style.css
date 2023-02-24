@@ -212,8 +212,6 @@ article .menu-plat-article__plat {
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
-  transform: scaleX(1);
-  transition: all 0.5s;
 }
 article .menu-plat-article__plat h3 {
   margin-bottom: 0.2em;
